@@ -52,7 +52,7 @@ body {
     /* position: relative; */
     display: flex;
     flex-direction: column;
-    /* transform: translateX(0); */
+    transform: translateX(0);
     gap: 30px;
     width: 250px;
     background: var(--foreground);
