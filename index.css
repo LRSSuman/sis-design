@@ -52,7 +52,7 @@ body {
     /* position: relative; */
     display: flex;
     flex-direction: column;
-    transform: translateX(0);
+    /* transform: translateX(0); */
     gap: 30px;
     width: 250px;
     background: var(--foreground);
@@ -62,10 +62,12 @@ body {
     -moz-box-shadow: 1px 0px 5px 0.5px rgba(0, 0, 0, 0.2);
     box-shadow: 1px 0px 5px 0.5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+    /* transition: margin 3s ease-in-out; */
 }
 
 .sidebar-open {
     transform: translateX(-250px);
+    /* margin-left: -250px; */
     display: none;
 }
 
@@ -540,6 +542,11 @@ img {
 }
 
 @media only screen and (max-width: 1080px) {
+    .no-scroll {
+        width: 100%;
+        overflow-y: hidden;
+    }
+
     .close {
         position: absolute;
         width: 25px;
